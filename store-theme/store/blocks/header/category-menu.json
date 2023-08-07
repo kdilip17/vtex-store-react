@@ -1,0 +1,75 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#categories-0",
+      "menu-item#categories-1",
+      "menu-item#categories-2",
+      "menu-item#categories-3",
+      "menu-item#categories-4"
+    ]
+  },
+  "menu-item#categories-0": {
+    "blocks": [ "vtex.menu@2.x:submenu#categories-0" ]
+  },
+  "vtex.menu@2.x:submenu#categories-0": {
+    "children": ["vtex.menu@2.x:menu#categories-0"]
+  },
+  "vtex.menu@2.x:menu#categories-0": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "items":[]
+    }
+  },
+  "menu-item#categories-1": {
+    "blocks": [ "vtex.menu@2.x:submenu#categories-1" ]
+  },
+  "vtex.menu@2.x:submenu#categories-1": {
+    "children": ["vtex.menu@2.x:menu#categories-1"]
+  },
+  "vtex.menu@2.x:menu#categories-1": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "items":[]
+    }
+  },
+  "menu-item#categories-2": {
+    "blocks": [ "vtex.menu@2.x:submenu#categories-2" ]
+  },
+  "vtex.menu@2.x:submenu#categories-2": {
+    "children": ["vtex.menu@2.x:menu#categories-2"]
+  },
+  "vtex.menu@2.x:menu#categories-2": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "items":[]
+    }
+  },
+  "menu-item#categories-3": {
+    "blocks": [ "vtex.menu@2.x:submenu#categories-3" ]
+  },
+  "vtex.menu@2.x:submenu#categories-3": {
+    "children": ["vtex.menu@2.x:menu#categories-3"]
+  },
+  "vtex.menu@2.x:menu#categories-3": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "items":[]
+    }
+  },
+  "menu-item#categories-4": {
+    "blocks": [ "vtex.menu@2.x:submenu#categories-4" ]
+  },
+  "vtex.menu@2.x:submenu#categories-4": {
+    "children": ["vtex.menu@2.x:menu#categories-4"]
+  },
+  "vtex.menu@2.x:menu#categories-4": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+        "isActive":false,
+      "items":[]
+    }
+  }
+}

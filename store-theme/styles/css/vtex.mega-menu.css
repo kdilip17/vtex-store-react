@@ -1,0 +1,16 @@
+.triggerContainer {
+  padding: 22px 10px;
+}
+
+.menuContainerNav {
+  width: 98%;
+  top: 79px;
+  left: 7px;
+  z-index: 1;
+}
+.menuContainer {
+  max-height: 80vh;
+}
+.styledLinkText{
+  color: #727273;
+}

@@ -1,0 +1,19 @@
+.tileListList {
+    margin: 0px 10px;
+}
+.tileListItem {
+    margin: 0px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.biggy-autocomplete-wrapper{
+    width: 60vw !important;
+}
+
+.itemList{
+    flex: 0.6;
+}
+.galleryItem--list{
+    padding: 0 0 12px 0;
+}

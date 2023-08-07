@@ -1,0 +1,212 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      // "flex-layout.row#3-desktop",
+      "sticky-layout#4-desktop"
+    ]
+  },
+
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "category-menu#desktop"
+      //"vtex.menu@2.x:menu#websites",
+      //"flex-layout.col#spacer",
+      //"vtex.menu@2.x:menu#institutional"
+    ]
+  },
+  "category-menu#desktop": {
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "mobileMode": false,
+      "departments": [],
+      "sortSubcategories": "name"
+    }
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#4-desktop",
+      "flex-layout.row#3-desktop"
+    ]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      //Need to un-comment below line to show mega menu in store
+      // "flex-layout.row#6-desktop",
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#category-menu",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "locale-switcher",
+      "menu-item#seller",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "menu-item#seller": {
+    "props": {
+      "id": "menu-item-seller",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/seller-request",
+        "noFollow": false,
+        "tagTitle": "Seller Request",
+        "text": "Seller Request"
+      }
+    }
+  },
+  // Configurations for intelligent search - start
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf#default"]
+  },
+  "product-summary.shelf#default": {
+    "children": [
+      "product-summary-name",
+      "stack-layout#prodsum",
+      "product-summary-space",
+
+      "flex-layout.row#productRating",
+      "product-list-price#summary",
+      "flex-layout.row#selling-price-savings",
+      "add-to-cart-button"
+    ]
+  },
+  // Configurations for intelligent search - end
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "logo#desktop"
+    ]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+       // "vtex.menu@2.x:menu#category-menu"
+    ]
+  },
+  //category menu handled used category-menu app for mobile
+  "category-menu#mobile": {
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "mobileMode": true,
+      "departments": [],
+      "sortSubcategories": "name"
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "180",
+      "height": "12"
+    }
+  },
+  "header-layout.mobile": {
+    "children": [
+      "sticky-layout#1-mobile"
+    ]
+  },
+  "sticky-layout#1-mobile": {
+    "children": [
+      "flex-layout.row#1-mobile"
+    ]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      //"drawer",
+      //Need to un comment below line for mega menu mobile view
+      // "flex-layout.col#trigger-mega-menu",
+      "category-menu#mobile",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": [
+      "menu#drawer",
+      "mega-menu#mobile"
+    ],
+    "blocks": ["drawer-header#my-drawer"]
+  },
+  "menu#drawer": {
+    "children": [
+      "menu-item#categories-0",
+      "menu-item#categories-1",
+      "menu-item#categories-2",
+      "menu-item#categories-3",
+      "menu-item#categories-4"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "width": "77.5",
+      "height": "27.5"
+    }
+  }
+}

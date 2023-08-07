@@ -1,0 +1,146 @@
+.productHighlightWrapper--collection {
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  width: 200px;
+}
+
+.productHighlightText {
+  background: #f71963;
+  border-radius: 0px;
+  padding: 6px 18px;
+  color: #fff;
+}
+
+.productHighlightWrapper--collectionPdp{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.productHighlightText--highlightTextPdp {
+  background: #f71963;
+  padding: 6px 18px;
+  color: #fff;
+  border-radius: 0px;
+}
+
+.productHighlightWrapper--collectionList{
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  width: 200px;
+}
+
+.productHighlightText--highlightTextList {
+  background: #f71963;
+  border-radius: 0px;
+  padding: 2px 12px;
+  color: #fff;
+}
+
+.productHighlightWrapper--collectionGrid{
+  position: absolute;
+  top: -24px;
+  left: 0px;
+  width: 200px;
+}
+
+.productHighlightText--highlightTextGrid {
+  background: #f71963;
+  border-radius: 0px;
+  padding: 2px 12px;
+  color: #fff;
+}
+
+.productHighlightWrapper--collectionListMobile{
+  position: absolute;
+  top: 135px;
+  left: 0px;
+  width: 200px;
+}
+
+.productHighlightText--highlightTextListMobile {
+  background: #f71963;
+  border-radius: 0px;
+  padding: 2px 12px;
+  color: #fff;
+}
+
+@media screen and (max-width: 390px)    {
+  .productHighlightWrapper--collectionListMobile{
+    top: 120px;
+    left: 0px;
+  }
+}
+@media (min-width: 391px) and (max-width: 420px)    {
+  .productHighlightWrapper--collectionListMobile{
+    top: 120px;
+    left: 10px;
+  }
+}
+@media (min-width: 720px) and (max-width: 780px)    {
+  .productHighlightWrapper--collectionListMobile{
+    top: 120px;
+    left: 90px;
+  }
+}
+@media (min-width: 780px) and (max-width: 900px)    {
+  .productHighlightWrapper--collectionListMobile{
+    top: 120px;
+    left: 102px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1080px)    {
+  .productHighlightWrapper--collectionListMobile{
+    top: 120px;
+    left: 125px;
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1366px)    {
+  .productHighlightWrapper--collection  {
+    top: -50px;
+  }
+  .productHighlightWrapper--collectionGrid{
+    top: -23px;
+  }
+  
+}
+@media screen and (min-width: 1366px)    {
+  .productHighlightWrapper--collectionGrid{
+    top: -24px;
+  }
+  .productHighlightWrapper--collection  {
+    top: -24px;
+  }
+
+ 
+  
+}
+
+@media (min-width: 1080px) and (max-width: 1380px)    {
+  .productHighlightWrapper--collectionList{
+    top: 160px;
+    left: 0px;
+  }
+}
+@media (min-width: 1380px) and (max-width: 1600px)    {
+  .productHighlightWrapper--collectionList{
+    top: 160px;
+    left: 5px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1720px)    {
+  .productHighlightWrapper--collectionList{
+    top: 160px;
+    left: 17px;
+  }
+}
+
+@media screen and (min-width: 1720px)    {
+  .productHighlightWrapper--collectionList{
+    top: 162px;
+    left: 17px;
+  }
+}

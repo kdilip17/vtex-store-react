@@ -1,0 +1,7 @@
+{
+  "store.custom#create-seller": {
+    "blocks": [
+      "create-seller"
+    ]
+  }
+}
